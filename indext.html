@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ポートフォリオ | Your Name</title>
+  <meta name="description" content="未経験Webエンジニアのポートフォリオ。制作物・スキル・連絡先を掲載。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">Your Name</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="badge">未経験 Webエンジニア ポートフォリオ</p>
+        <h1 class="hero__title">業務で使われることを意識して、<br/>丁寧に作る。</h1>
+        <p class="hero__text">
+          HTML/CSS/JavaScript を基礎に、React/TypeScript も学習中。<br />
+          「読みやすいコード」「再現性の高い実装」「改善の継続」を大切にしています。
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">制作物を見る</a>
+          <a class="btn btn--ghost" href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="metaCard">
+            <p class="metaCard__label">得意</p>
+            <p class="metaCard__value">UI再現 / 仕様整理</p>
+          </div>
+          <div class="metaCard">
+            <p class="metaCard__label">関心</p>
+            <p class="metaCard__value">EC / フロントエンド</p>
+          </div>
+          <div class="metaCard">
+            <p class="metaCard__label">目標</p>
+            <p class="metaCard__value">実務で改善を回す</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <p class="section__lead">
+          前職では、複数拠点を横断する業務の調整やデータをもとにした改善に携わりました。
+          その経験を活かし、Web開発でも「課題→仮説→実装→検証」の流れを意識して制作しています。
+        </p>
+
+        <div class="twoCol">
+          <div class="card">
+            <h3 class="card__title">強み</h3>
+            <ul class="list">
+              <li>要件を文章化して、タスクに分解できる</li>
+              <li>UI崩れを潰して品質を上げるのが好き</li>
+              <li>改善点をNotion/READMEにまとめて継続できる</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card__title">学習スタイル</h3>
+            <ul class="list">
+              <li>まず動くものを作り、リファクタしながら理解を深める</li>
+              <li>毎週1回、制作物の改善（UI/可読性/速度）を入れる</li>
+              <li>エラー対応や詰まった点は記事化して再発防止</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="skills">
+          <div class="chipGroup">
+            <p class="chipGroup__label">Frontend</p>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript（学習中）</span>
+              <span class="chip">React（学習中）</span>
+            </div>
+          </div>
+
+          <div class="chipGroup">
+            <p class="chipGroup__label">Tools</p>
+            <div class="chips">
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Figma（模写）</span>
+            </div>
+          </div>
+
+          <div class="chipGroup">
+            <p class="chipGroup__label">Quality</p>
+            <div class="chips">
+              <span class="chip">レスポンシブ</span>
+              <span class="chip">アクセシビリティ基礎</span>
+              <span class="chip">README整備</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="note">
+          ※ “できる/できない” を曖昧にせず、制作物で示すことを重視しています。
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__lead">
+          作品は「動くデモ」と「README（意図・工夫・改善点）」までセットで公開しています。
+        </p>
+
+        <div class="grid">
+          <article class="project card">
+            <div class="project__top">
+              <h3 class="card__title">① タスク管理アプリ（CRUD）</h3>
+              <p class="muted">優先度・期限・検索に対応。まずは“業務っぽさ”重視。</p>
+            </div>
+            <ul class="list">
+              <li>機能：追加/編集/削除、フィルタ、入力バリデーション</li>
+              <li>工夫：状態の持ち方、コンポーネント分割（予定）</li>
+            </ul>
+            <div class="links">
+              <a class="linkBtn" href="https://your-demo-url.example" target="_blank" rel="noreferrer">Demo</a>
+              <a class="linkBtn" href="https://github.com/yourname/todo-app" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3 class="card__title">② LP模写（レスポンシブ）</h3>
+              <p class="muted">デザイン再現力・余白・タイポグラフィを重点的に。</p>
+            </div>
+            <ul class="list">
+              <li>機能：レスポンシブ、Hover、簡易アニメ</li>
+              <li>工夫：CSS設計（命名・共通化）</li>
+            </ul>
+            <div class="links">
+              <a class="linkBtn" href="https://your-lp-demo.example" target="_blank" rel="noreferrer">Demo</a>
+              <a class="linkBtn" href="https://github.com/yourname/lp" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3 class="card__title">③ ECデモ（任意：Shopifyなど）</h3>
+              <p class="muted">EC導線（一覧→詳細→カート）の理解を示す枠。</p>
+            </div>
+            <ul class="list">
+              <li>機能：商品一覧、詳細、疑似カート</li>
+              <li>工夫：情報設計、導線、UI改善ログ</li>
+            </ul>
+            <div class="links">
+              <a class="linkBtn" href="https://your-ec-demo.example" target="_blank" rel="noreferrer">Demo</a>
+              <a class="linkBtn" href="https://github.com/yourname/ec-demo" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__lead">
+          ご連絡はメール、またはSNSのDMでも可能です。
+        </p>
+
+        <div class="contact card">
+          <p><span class="muted">Email：</span> yourmail@example.com</p>
+          <p><span class="muted">GitHub：</span> <a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a></p>
+          <p><span class="muted">X：</span> <a href="https://x.com/yourname" target="_blank" rel="noreferrer">x.com/yourname</a></p>
+        </div>
+
+        <footer class="footer">
+          <small>© <span id="year"></span> Your Name</small>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
